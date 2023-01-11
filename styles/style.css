@@ -1,0 +1,1379 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, 
+a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, 
+strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form,
+label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details,
+embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    list-style: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ------------------------------------------------------------------- */
+
+@font-face {
+    font-family: "Georgia";
+    src: url("fonts/georgia/Georgia-Bold.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Georgia";
+    src: url("fonts/georgia/Georgia-Bold.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/lato/Lato-Regular.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/lato/Lato-Regular.woff") format("woff");
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/lato/Lato-Medium.woff2") format("woff2");
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/lato/Lato-Medium.woff") format("woff");
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/lato/Lato-SemiBold.woff2") format("woff2");
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/lato/Lato-SemiBold.woff") format("woff");
+    font-display: swap;
+}
+
+body, html {
+    height: 100%;
+    margin: auto;
+    font-family: "Lato", sans-serif;
+    color: #424242;
+}
+
+img {
+    object-fit: cover;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1413px;
+    margin: 0 auto;
+}
+
+.button {
+    background: #01996D;
+    padding: 20px 50px;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #fff;
+    display: inline-block;
+}
+
+/* ---header----------------------------------- */
+
+.main-header {
+    padding: 17px;
+    border: 1px solid #D6D6D6;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-nav {
+    display: flex;
+    flex-direction: row;
+    margin: 0 260px 0 150px;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-list-item {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.nav-list-item:not(:last-child) {
+    margin-right: 71px;
+}
+
+.nav-list-link {
+    color: #292929;
+}
+
+.header-button-clear {
+    margin-right: 35px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.header-button {
+    padding: 13px 50px;
+}
+
+/* ---main-------------------------------- */
+
+.main-container {
+    background-image: url("../images/bg-alivio.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 0 17px;
+}
+
+.main-div {
+    padding-bottom: 336px;
+}
+
+.main-title {
+    padding: 175px 0 30px;
+    max-width: 450px;
+    font-family: "Georgia";
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 74px;
+    color: #01996D;
+}
+
+.main-text {
+    margin-bottom: 48px;
+    max-width: 420px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 31px;
+    color: #484848;
+}
+
+/* ---steps-------------------------------- */
+
+.steps-container {
+    padding: 0 17px;
+}
+
+.steps-description {
+    margin: 169px 0 52px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.steps-description-titles {
+    display: flex;
+    flex-direction: column;
+}
+
+.steps-description-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 157%;
+}
+
+.steps-description-subtitle {
+    max-width: 584px;
+    font-family: "Georgia";
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 157%;
+    color: #01996D;
+}
+
+.steps-description-text {
+    max-width: 671px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    position: relative;
+    top: 58px;
+}
+
+.steps {
+    margin-bottom: 263px;
+}
+
+.steps-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.second-step {
+    position: relative;
+    top: 287px;
+}
+
+.third-step {
+    position: relative;
+    top: 54px;
+}
+
+.first-header {
+    margin-left: 88px;
+}
+
+.second-header {
+    margin-left: 79px;
+}
+
+.third-header {
+    margin-left: 124px;
+}
+
+.steps-number-item {
+    position: relative;
+    z-index: 3;
+    font-family: "Georgia";
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 150%;
+    text-align: center;
+    color: rgba(1, 153, 109, 0.2);
+}
+
+.steps-header-item {
+    position: relative;
+    bottom: 90px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 150%;
+    color: #000000;
+}
+
+.steps-text-item {
+    margin-top: -40px;
+    margin-bottom: 50px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.first-text {
+    max-width: 382px;
+}
+
+.second-text {
+    max-width: 392px;
+}
+
+.third-text {
+    max-width: 441px;
+}
+
+.steps-image-item {
+    border-radius: 12px;
+    max-width: 390px;
+}
+
+.laptop-images {
+    position: relative;
+}
+
+.steps-image-bg-item {
+    max-height: 148px;
+    position: absolute;
+    top: 224px;
+    left: 205px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: linear-gradient(122.77deg, rgba(24, 24, 24, 0.2) 2.51%, rgba(196, 196, 196, 0) 95.42%);
+}
+
+/* ---stories------------------------------ */
+
+.stories-bg-container {
+    background: #245852;
+    padding: 0 17px;
+}
+
+.stories-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stories-header {
+    max-width: 580px;
+    font-family: "Georgia";
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 157%;
+    color: #FFFFFF;
+}
+
+.stories-text {
+    margin: 33px 0 57px;
+    max-width: 550px;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 157%;
+    color: #FFFFFF;
+}
+
+.stories-video {
+    margin: 229px 0 177px;
+    max-width: 800px;
+    border-radius: 17px;
+}
+
+/* ---diary-------------------------------- */
+
+.diary-container {
+    padding: 120px 17px 242px;
+    max-width: 1370px;
+    margin: 0 auto;
+}
+
+.diary-section {
+    display: grid;
+    grid-template-columns: 638px 0 500px;
+    gap: 43px;
+}
+
+.diary-image {
+    max-width: 638px;
+}
+
+.diary-card {
+    min-width: 296px;
+    max-height: 293px;
+    position: relative;
+    top: 354px;
+    right: 747px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    color: #000000;
+    border-radius: 4px;
+    filter: drop-shadow(0px 3.62249px 18.1125px rgba(165, 165, 165, 0.25));
+}
+
+.diary-card-title {
+    font-weight: 600;
+    font-size: 14.49px;
+    line-height: 157%;
+}
+
+.diary-card-title::after {
+    text-align: center;
+    content: '';
+    display: block;
+    height: 0.7px;
+    width: 111px;
+    margin: 8px auto 14px auto;
+    background: #000;
+}
+
+.diary-card-subtitle {
+    margin: 10px auto 20px;
+}
+
+.diary-card-list-title {
+    font-family: "Georgia";
+    font-weight: 700;
+    font-size: 15.9292px;
+    line-height: 157%;
+    margin-bottom: 16px;
+}
+
+.diary-card-contents-list {
+    margin-left: -70px;
+}
+
+.diary-card-contents-item {
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 10.6195px;
+    line-height: 157%;
+}
+
+.diary-description {
+    max-width: 584px;
+}
+
+.diary-title {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 157%;
+}
+
+.diary-subtitle {
+    margin: 10px 0 20px;
+    font-family: "Georgia";
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 157%;
+    color: #01996D;
+}
+
+.diary-text {
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 31px;
+    color: #484848;
+}
+
+/* ---footer------------------------------- */
+
+.footer-bg-container {
+    background: #245852;
+    padding-left: 17px;
+}
+
+.footer-logo {
+    margin: 95px 0 60px;
+    max-width: 108px;
+}
+
+.footer-list {
+    padding-bottom: 84px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.footer-list-item {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.footer-list-link {
+    color: #fff;
+}
+
+/* ---media-------------------------------- */
+
+/* xxl applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+    .header-nav {
+        margin: 0 200px 0 120px;
+    }  
+
+    .nav-list-item:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    .header-button-clear {
+        margin-right: 30px;
+    }
+
+    .header-button {
+        padding: 10px 40px;
+    }
+
+    /* ---main--------------- */
+
+    .main-div {
+        padding-bottom: 200px;
+    }
+
+    .main-title {
+        padding: 120px 0 20px;
+        max-width: 450px;
+    }
+
+    .main-text {
+        margin-bottom: 40px;
+    }
+
+    /* ---steps-------------- */
+
+    .steps-description {
+        margin: 140px 0 40px 0;
+    }
+
+    .steps-description-subtitle {
+        max-width: 510px;
+    }
+
+    .steps-description-text {
+        max-width: 640px;
+    }
+
+    .steps {
+        margin-bottom: 270px;
+    }
+    
+    .steps-text-item {
+        margin-top: -30px;
+        margin-bottom: 40px;
+    }
+
+    .first-header {
+        margin-left: 70px;
+    }
+    
+    .second-header {
+        margin-left: 50px;
+    }
+    
+    .third-header {
+        margin-left: 124px;
+    }
+
+    .first-text {
+        max-width: 350px;
+    }
+    
+    .second-text {
+        max-width: 350px;
+    }
+    
+    .third-text {
+        max-width: 400px;
+    }
+    
+    .steps-image-item {
+        max-width: 350px;
+    }
+
+    .steps-image-bg-item {
+        max-height: 128px;
+        top: 202px;
+        left: 186px;
+    }
+
+    /* ---stories--------------------------- */
+
+    .stories-header {
+        max-width: 520px;
+    }
+
+    .stories-text {
+        margin: 25px 0 40px;
+        max-width: 500px;
+    }
+
+    .stories-video {
+        margin: 200px 0 150px;
+        max-width: 650px;
+    }
+
+    /* ---diary----------------------------- */
+
+    .diary-container {
+        padding: 100px 17px 150px;
+        max-width: 1170px;
+    }
+
+    .diary-section {
+        grid-template-columns: 550px 0 1fr;
+        gap: 5px;
+    }
+
+    .diary-image {
+        max-width: 520px;
+    }
+
+    .diary-card {
+        max-height: 270px;
+        min-width: 250px;
+        top: 300px;
+        right: 575px;
+    }
+
+    .diary-card-title {
+        padding-top: 20px;
+    }
+
+    /* ---footer---------------------------- */
+
+    .footer-logo {
+        margin: 70px 0 50px;
+        max-width: 100px;
+    }
+
+    .footer-list {
+        padding-bottom: 60px;
+        gap: 40px;
+    }
+}
+
+/* xl applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .header-nav {
+        margin: 0 120px 0 80px;
+    }  
+
+    .nav-list-item:not(:last-child) {
+        margin-right: 25px;
+    }
+
+    .header-button-clear {
+        margin-right: 20px;
+    }
+
+    /* ---main--------------- */
+
+    .main-div {
+        padding-bottom: 150px;
+    }
+
+    .main-title {
+        padding: 100px 0 20px;
+        max-width: 450px;
+    }
+
+    /* ---steps-------------- */
+
+    .steps {
+        margin-bottom: 150px;
+    }
+
+    .steps-description {
+        margin: 120px 0 30px 0;
+    }
+
+    .steps-description-subtitle {
+        max-width: 510px;
+    }
+
+    .steps-description-text {
+        max-width: 500px;
+    }
+
+    .steps-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .second-step {
+        top: 200px;
+    }
+    
+    .third-step {
+        top: 30px;
+    }
+    
+    .steps-text-item {
+        margin-top: -50px;
+        margin-bottom: 30px;
+    }
+
+    .first-header {
+        margin-left: 70px;
+    }
+    
+    .second-header {
+        margin-left: 50px;
+    }
+    
+    .third-header {
+        margin-left: 124px;
+    }
+
+    .first-text {
+        max-width: 420px;
+    }
+    
+    .second-text {
+        max-width: 420px;
+    }
+    
+    .third-text {
+        max-width: 420px;
+    }
+    
+    .steps-image-item {
+        max-width: 340px;
+    }
+
+    .steps-image-bg-item {
+        max-height: 128px;
+        top: 193px;
+        left: 175px;
+    }
+
+    /* ---stories--------------------------- */
+
+    .stories-header {
+        max-width: 480px;
+    }
+
+    .stories-text {
+        margin: 20px 0 30px;
+        max-width: 400px;
+        font-size: 20px;
+    }
+
+    .stories-video {
+        margin: 150px 0 120px;
+        max-width: 520px;
+    }
+
+    /* ---diary----------------------------- */
+
+    .diary-container {
+        padding: 80px 17px 120px;
+    }
+
+    .diary-section {
+        grid-template-columns: 500px 0 1fr;
+        gap: 0;
+    }
+
+    .diary-image {
+        padding-left: 10px;
+        max-width: 450px;
+    }
+
+    .diary-card {
+        max-width: 180px;
+        top: 220px;
+        right: 505px;
+    }
+
+    .diary-card-title {
+        padding-top: 10px;
+    }
+
+    .diary-card-title::after {
+        text-align: center;
+        content: '';
+        display: block;
+        height: 0.7px;
+        width: 111px;
+        margin: 8px auto 14px auto;
+        background: #000;
+    }
+    
+    .diary-card-subtitle {
+        margin: 5px auto 10px;
+    }
+    
+    .diary-card-list-title {
+        line-height: 125%;
+        margin-bottom: 12px;
+    }
+    
+    .diary-card-contents-item {
+        margin-bottom: 16px;
+        font-weight: 400;
+        font-size: 10.6195px;
+        line-height: 157%;
+    }
+
+    .diary-title {
+        font-size: 20px;
+        line-height: 120%;
+    }
+    
+    .diary-subtitle {
+        max-width: 480px;
+        margin: 10px 0 20px;
+        font-size: 40px;
+        line-height: 120%;
+    }
+    
+    .diary-text {
+        margin-bottom: 30px;
+        max-width: 480px;
+    }
+
+    /* ---footer---------------------------- */
+
+    .footer-logo {
+        margin: 50px 0 35px;
+        max-width: 80px;
+    }
+
+    .footer-list {
+        padding-bottom: 40px;
+        gap: 30px;
+    }
+}
+
+/* lg applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .header-nav {
+        margin: 0 80px 0 80px;
+    }
+
+    .nav-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 60px;
+        row-gap: 15px;
+    }
+
+    .nav-list-item:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    .header-button-clear {
+        line-height: 50px;
+    }
+
+    /* ---main--------------- */
+
+    .main-div {
+        padding-bottom: 80px;
+    }
+
+    .main-title {
+        padding: 80px 0 20px;
+        max-width: 450px;
+        font-size: 55px;
+    }
+
+    /* ---steps-------------- */
+
+    .steps {
+        margin-bottom: 20px;
+    }
+
+    .steps-description {
+        margin: 100px 0 40px 0;
+        flex-direction: column;
+    }
+
+    .steps-description-titles {
+        margin-bottom: -30px;
+    }
+
+    .steps-description-subtitle {
+        max-width: 650px;
+        line-height: 130%;
+    }
+
+    .steps-description-text {
+        max-width: 650px;
+    }
+
+    .steps-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .second-step {
+        top: 200px;
+    }
+    
+    .third-step {
+        top: -30px;
+    }
+    
+    .steps-text-item {
+        margin-top: -70px;
+        margin-bottom: 20px;
+    }
+    
+    .third-header {
+        margin-left: 100px;
+    }
+
+    .first-text {
+        max-width: 350px;
+    }
+    
+    .second-text {
+        max-width: 350px;
+    }
+    
+    .third-text {
+        max-width: 380px;
+    }
+    
+    .steps-image-item {
+        max-width: 340px;
+    }
+
+    .steps-image-bg-item {
+        max-height: 128px;
+        top: 193px;
+        left: 175px;
+    }
+
+    /* ---stories--------------------------- */
+
+    .stories-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .stories-header {
+        margin-top: 40px;
+        max-width: 650px;
+        line-height: 130%
+    }
+
+    .stories-text {
+        margin: 15px 0 20px;
+        max-width: 650px;
+        font-size: 20px;
+    }
+
+    .stories-button {
+        padding: 20px 260px;
+    }
+
+    .stories-video {
+        margin: 30px 0 70px;
+        max-width: 660px;
+    }
+
+    /* ---diary----------------------------- */
+
+    .diary-container {
+        padding: 50px 17px 80px;
+    }
+
+    .diary-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .diary-description {
+        margin: -100px auto 0;
+    }
+
+    .diary-image {
+        margin: 0 auto;
+        padding-left: 10px;
+        max-width: 430px;
+    }
+
+    .diary-card {
+        max-width: 220px;
+        top: -140px;
+        left: 285px;
+    }
+
+    .diary-card-title::after {
+        width: 100px;
+    }
+    
+    .diary-card-subtitle {
+        margin: 5px auto 8px;
+    }
+    
+    .diary-card-list-title {
+        margin-bottom: 10px;
+    }
+    
+    .diary-card-contents-item {
+        margin-bottom: 12px;
+        line-height: 125%;
+    }
+
+    .diary-title {
+        font-size: 18px;
+    }
+    
+    .diary-subtitle {
+        max-width: 600px;
+        margin: 8px 0 15px;
+    }
+    
+    .diary-text {
+        margin-bottom: 20px;
+    }
+
+    .diary-button {
+        padding: 20px 72px;
+        text-align: center;
+
+    }
+
+    /* ---footer---------------------------- */
+
+    .footer-logo {
+        margin: 50px 0 30px;
+        max-width: 80px;
+    }
+
+    .footer-list {
+        padding-bottom: 30px;
+        gap: 20px;
+    }
+}
+
+/* md applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+    .main-header {
+        padding: 12px;
+    }
+    
+    .header-nav {
+        margin: 0 30px 0 30px;
+    }
+
+    .nav-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+        row-gap: 10px;
+    }
+
+    .nav-list-item:not(:last-child) {
+        margin-right: 12px;
+    }
+
+    .header-button-clear {
+        line-height: 30px;
+    }
+
+    /* ---main--------------- */
+
+    .main-container {
+        background-position: left top;
+    }
+
+    .main-div {
+        padding-bottom: 60px;
+    }
+
+    .main-title {
+        padding: 40px 0 12px;
+        max-width: 450px;
+        font-size: 50px;
+        line-height: 130%;
+    }
+
+    /* ---steps-------------- */
+
+    .steps {
+        margin-bottom: 15px;
+    }
+
+    .steps-description {
+        margin: 80px 0 30px 0;
+        flex-direction: column;
+    }
+
+    .steps-description-titles {
+        margin-bottom: -40px;
+    }
+
+    .steps-description-subtitle {
+        max-width: 650px;
+        line-height: 130%;
+        font-size: 50px;
+    }
+
+    .steps-description-text {
+        max-width: 650px;
+    }
+
+    .steps-list {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .second-step {
+        top: -20px;
+    }
+    
+    .third-step {
+        top: -20px;
+    }
+    
+    .steps-text-item {
+        margin-top: -70px;
+        margin-bottom: 20px;
+    }
+    
+    .third-header {
+        margin-left: 100px;
+    }
+
+    .first-text {
+        max-width: 720px;
+    }
+    
+    .second-text {
+        max-width: 720px;
+    }
+    
+    .third-text {
+        max-width: 720px;
+    }
+    
+    .steps-image-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 240px;
+    }
+
+    .steps-image-bg-item {
+        max-height: 90px;
+        top: 137px;
+        left: 124px;
+    }
+
+    /* ---stories--------------------------- */
+
+    .stories-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .stories-header {
+        margin-top: 40px;
+        line-height: 130%;
+        font-size: 50px;
+        max-width: 650px;
+        line-height: 130%
+    }
+
+    .stories-text {
+        margin: 15px 0 20px;
+        max-width: 650px;
+        font-size: 20px;
+    }
+
+    .stories-button {
+        padding: 20px 200px;
+        text-align: center;
+    }
+
+    .stories-video {
+        margin: 40px 0 40px;
+        max-width: 560px;
+    }
+}
+
+/* sm applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .header-container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .main-header {
+        padding: 12px;
+    }
+    
+    .header-nav {
+        margin: 0 15px 0 15px;
+    }
+
+    .nav-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 50px;
+        row-gap: 15px;
+        margin: 20px 0 20px 0;
+    }
+
+    .header-button-clear {
+        line-height: 20px;
+    }
+
+    /* ---main--------------- */
+
+    .main-container {
+        background-position: left top;
+    }
+
+    .main-div {
+        padding-bottom: 60px;
+    }
+
+    .main-title {
+        padding: 30px 0 10px;
+        max-width: 300px;
+        font-size: 40px;
+        line-height: 130%;
+    }
+
+    .main-text {
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 25px;
+    }
+
+    .main-button {
+        padding: 20px 79px;
+    }
+
+    /* ---steps-------------- */
+
+    .steps {
+        margin-bottom: 15px;
+    }
+
+    .steps-description {
+        margin: 50px 0 20px 0;
+        flex-direction: column;
+    }
+
+    .steps-description-titles {
+        margin-bottom: -40px;
+    }
+
+    .steps-description-subtitle {
+        max-width: 530px;
+        line-height: 120%;
+        font-size: 40px;
+    }
+
+    .steps-description-text {
+        max-width: 530px;
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 25px;
+    }
+
+    /* ---stories--------------------------- */
+
+    .stories-header {
+        margin-top: 30px;
+        max-width: 500px;
+        font-size: 40px;
+        line-height: 130%;
+    }
+
+    .stories-text {
+        margin: 15px 0 20px;
+        max-width: 650px;
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 25px;
+    }
+
+    .stories-button {
+        padding: 20px 72px;
+    }
+
+    .stories-video {
+        margin: 20px 0 20px;
+        max-width: 290px;
+    }
+
+    /* ---diary----------------------------- */
+
+    .diary-container {
+        padding: 30px 10px 30px;
+    }
+
+    .diary-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .diary-description {
+        margin-top: -140px;
+    }
+
+    .diary-image {
+        padding-left: 10px;
+        max-width: 300px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .diary-card {
+        max-width: 150px;
+        position: static;
+        margin-top: -80px;
+    }
+
+    .diary-title {
+        margin-top: 170px;
+        font-size: 18px;
+    }
+    
+    .diary-subtitle {
+        max-width: 300px;
+    }
+    
+    .diary-text {
+        margin-bottom: 20px;
+        max-width: 300px;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .diary-button {
+        padding: 20px 85px;
+        text-align: center;
+    }
+
+    /* ---footer---------------------------- */
+
+    .footer-logo {
+        margin: 30px 0 20px;
+        max-width: 80px;
+    }
+
+    .footer-list {
+        padding-bottom: 30px;
+        gap: 10px;
+    }
+
+    .footer-list-item {
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+
