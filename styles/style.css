@@ -386,8 +386,13 @@ img {
 
 .diary-section {
     display: grid;
-    grid-template-columns: 638px 0 500px;
+    grid-template-columns: 638px 584px;
     gap: 43px;
+}
+
+.diary-card-image {
+    margin: 0 auto;
+    position: relative;
 }
 
 .diary-image {
@@ -397,10 +402,11 @@ img {
 .diary-card {
     min-width: 296px;
     max-height: 293px;
-    position: relative;
-    top: 354px;
-    right: 747px;
+    position: absolute;
     display: flex;
+    left: -61px;
+    bottom: -75px;
+    padding: 23px 0 30px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -621,7 +627,7 @@ img {
     }
 
     .diary-section {
-        grid-template-columns: 550px 0 1fr;
+        grid-template-columns: 550px 1fr;
         gap: 5px;
     }
 
@@ -631,9 +637,7 @@ img {
 
     .diary-card {
         max-height: 270px;
-        min-width: 250px;
-        top: 300px;
-        right: 575px;
+        max-width: 250px;
     }
 
     .diary-card-title {
@@ -768,12 +772,11 @@ img {
     /* ---diary----------------------------- */
 
     .diary-container {
-        padding: 80px 17px 120px;
+        padding: 80px 17px 180px;
     }
 
     .diary-section {
-        grid-template-columns: 500px 0 1fr;
-        gap: 0;
+        grid-template-columns: 500px 1fr;
     }
 
     .diary-image {
@@ -783,8 +786,8 @@ img {
 
     .diary-card {
         max-width: 180px;
-        top: 220px;
-        right: 505px;
+        bottom: -160px;
+        left: 80px;
     }
 
     .diary-card-title {
@@ -978,13 +981,13 @@ img {
 
     /* ---diary----------------------------- */
 
-    .diary-container {
-        padding: 50px 17px 80px;
-    }
-
     .diary-section {
         display: flex;
         flex-direction: column;
+    }
+
+    .diary-container {
+        padding: 80px 17px 70px;
     }
 
     .diary-description {
@@ -992,15 +995,15 @@ img {
     }
 
     .diary-image {
-        margin: 0 auto;
+        margin: 0 auto 270px;
         padding-left: 10px;
         max-width: 430px;
     }
 
     .diary-card {
         max-width: 220px;
-        top: -140px;
-        left: 285px;
+        left: 70px;
+        bottom: 100px;
     }
 
     .diary-card-title::after {
@@ -1034,6 +1037,7 @@ img {
     }
 
     .diary-button {
+        display: block;
         padding: 20px 72px;
         text-align: center;
 
@@ -1315,17 +1319,18 @@ img {
         padding: 30px 10px 30px;
     }
 
-    .diary-section {
-        display: flex;
-        flex-direction: column;
-    }
-
     .diary-description {
         margin-top: -140px;
     }
 
+    .diary-card-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
     .diary-image {
-        padding-left: 10px;
         max-width: 300px;
         position: relative;
         display: flex;
@@ -1333,9 +1338,12 @@ img {
     }
 
     .diary-card {
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
         max-width: 150px;
-        position: static;
-        margin-top: -80px;
     }
 
     .diary-title {
@@ -1343,18 +1351,14 @@ img {
         font-size: 18px;
     }
     
-    .diary-subtitle {
-        max-width: 300px;
-    }
-    
     .diary-text {
         margin-bottom: 20px;
-        max-width: 300px;
         font-size: 18px;
         line-height: 25px;
     }
 
     .diary-button {
+        display: block;
         padding: 20px 85px;
         text-align: center;
     }
